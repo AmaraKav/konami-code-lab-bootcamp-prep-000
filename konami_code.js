@@ -7,9 +7,10 @@ function init() {
     var x = (event.which || event.keyCode);
       if(code[index] === x){
         empty++;
-      } else if (empty === code.length){
+        if (empty === code.length){
           alert("It matches");
           empty = 0;
+        }
       } else {
           empty = 0;
       }
