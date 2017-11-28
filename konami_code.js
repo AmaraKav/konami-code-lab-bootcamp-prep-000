@@ -5,7 +5,7 @@ function init() {
   var empty = 0;
   chose.addEventListener('keydown', function(event){
     var x = (event.which || event.keyCode);
-      if(code[index] === x){
+      if(code[empty] === x){
         empty++;
         if (empty === code.length){
           alert("It matches");
