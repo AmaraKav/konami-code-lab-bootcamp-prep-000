@@ -4,7 +4,7 @@ function init() {
   var chose = document.querySelector('body');
   var empty = 0;
   chose.addEventListener('keydown', function(event){
-    var x = (event.which || event.keyCode);
+    var x = parseInt(event.which || event.keyCode);
       if(code[empty] === x){
         empty++;
         if (empty === code.length){
